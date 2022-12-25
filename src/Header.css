@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header__img{
+    width: 90px;
+    padding-left: 40px;
+    object-fit: contain;
+}
+.header__account li, .header__model li{
+    display: inline-block;
+    padding-top: 20px;
+}
+.header__account{
+    padding-right: 40px;
+}
+
+.header__account li a, .header__model li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.header__account li a span, .header__model li a span{
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.header__account li a span:hover, .header__model li a span:hover{
+    background-color: rgb(218, 211, 211);
+}
