@@ -8,26 +8,12 @@
     padding-left: 40px;
     object-fit: contain;
 }
-.header__model li{
-    display: inline-block;
-    padding-top: 20px;
+.header__model{
+    position: fixed;
+    left: 30%;
 }
 
-.header__model li a{
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
-}
-
-.header__model li a span{
-    padding: 5px 15px;
-    border-radius: 4px;
-}
-
-.header__model li a span:hover{
-    background-color: rgb(218, 211, 211);
-}
-.header__account li{
+.header__account li,.header__model li{
     display: inline-block;
     padding-top: 20px;
 }
@@ -37,17 +23,17 @@
     right: 40px;
 }
 
-.header__account li a{
+.header__account li a,.header__model li a{
     text-decoration: none;
     font-weight: 600;
     color: black;
 }
 
-.header__account li a span{
+.header__account li a span,.header__model li a span{
     padding: 5px 15px;
     border-radius: 4px;
 }
 
-.header__account li a span:hover{
-    background-color: rgb(218, 211, 211);
+.header__account li a span:hover,.header__model li a span:hover{
+    background-color: rgba(255, 248, 248, 0.6);
 }

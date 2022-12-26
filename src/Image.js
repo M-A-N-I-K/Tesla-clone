@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Image.css"
 
-function Image({ imgUrl, modelName, desc }) {
+function Image({ imgUrl, modelName, desc, rightButton }) {
     return (
         <div className='image' style={{
             backgroundImage: `url(${imgUrl})`,
@@ -9,15 +9,15 @@ function Image({ imgUrl, modelName, desc }) {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center center',
             height: '100vh',
-            position: "relative"
+            width: '100vw',
         }}>
             <div className="container">
                 <h1 className='container__modelName'>{modelName}</h1>
-                <a href="http://">{desc}</a>
+                <a href="http://" >{desc}</a>
             </div>
             <div className="btn">
                 <button className='btn__buyNow' style={{ padding: "10px 97px" }}>Buy Now</button>
-                <button className='btn__custom'>Custom Order</button>
+                {rightButton && <button className='btn__custom'>{rightButton}</button>}
             </div>
 
         </div>

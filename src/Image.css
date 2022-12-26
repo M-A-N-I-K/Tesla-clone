@@ -4,10 +4,11 @@
     object-fit: contain;
     align-items: center;
     justify-content: space-between;
+    overflow-x: scroll;
 }
 .container{
-    position: fixed;
-    top: 15%;
+    padding-top: 15vh;
+    text-align: center;
 }
 .container a{
     color: black;
@@ -19,15 +20,14 @@
 }
 
 .btn{
-    position: fixed; 
-    bottom: 20%;
+    padding-bottom: 15vh;
 }
 .btn button{
     padding: 10px 80px;
     border-radius: 4px;
     border-style: none;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 600;
 }
 .btn__buyNow{
     background-color: rgb(36, 36, 36);
