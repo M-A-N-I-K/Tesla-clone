@@ -20,14 +20,22 @@
 }
 
 .btn{
+    display: flex;
+    margin-bottom: 30px;
     padding-bottom: 15vh;
 }
 .btn button{
-    padding: 10px 80px;
+    width: 256px;
+    height: 40px;
     border-radius: 4px;
     border-style: none;
     cursor: pointer;
     font-weight: 600;
+}
+@media (max-width: 768px) {
+    .btn{
+        flex-direction: column;
+    }
 }
 .btn__buyNow{
     background-color: rgb(36, 36, 36);
@@ -38,4 +46,13 @@
     background-color: white;
     color: rgb(36, 36, 36);
 
+}
+.container2{
+    text-align: center;
+}
+.container2 .icon{
+    color: white;
+    height: 40px;
+    font-size: 4rem;
+    animation: animateDown infinite 1.5s;
 }

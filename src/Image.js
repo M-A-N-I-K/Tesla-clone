@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Image.css"
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Image({ imgUrl, modelName, desc, rightButton }) {
     return (
@@ -15,9 +16,12 @@ function Image({ imgUrl, modelName, desc, rightButton }) {
                 <h1 className='container__modelName'>{modelName}</h1>
                 <a href="http://" >{desc}</a>
             </div>
-            <div className="btn">
-                <button className='btn__buyNow' style={{ padding: "10px 97px" }}>Buy Now</button>
-                {rightButton && <button className='btn__custom'>{rightButton}</button>}
+            <div className="container2">
+                <div className="btn">
+                    <button className='btn__buyNow' style={{ padding: "10px 97px" }}>Buy Now</button>
+                    {rightButton && <button className='btn__custom'>{rightButton}</button>}
+                </div>
+                <ExpandMoreIcon className='icon' />
             </div>
 
         </div>

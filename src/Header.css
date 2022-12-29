@@ -1,7 +1,13 @@
 .header{
     position: fixed;
     display: flex;
+    align-items: center;
+    padding: 0 20px;
     z-index: 1;
+    min-height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .header__img{
     width: 90px;
@@ -9,22 +15,17 @@
     object-fit: contain;
 }
 .header__model{
-    position: fixed;
-    left: 30%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__account li,.header__model li{
     display: inline-block;
-    padding-top: 20px;
-}
-
-.header__account{
-    position: fixed;
-    right: 40px;
 }
 
 .header__account li a,.header__model li a{
-    text-decoration: none;
     font-weight: 600;
     color: black;
 }
