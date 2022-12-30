@@ -36,6 +36,9 @@
     .btn{
         flex-direction: column;
     }
+    .btn__buyNow{
+        margin-bottom: 20px;
+    }
 }
 .btn__buyNow{
     background-color: rgb(36, 36, 36);
