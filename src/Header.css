@@ -28,7 +28,6 @@
 
 .header__account li a,.header__model li a{
     font-weight: 600;
-    color: black;
 }
 
 .header__account li span,.header__model li span{
@@ -36,11 +35,42 @@
     border-radius: 4px;
 }
 
-.header__account li span:hover,.header__model li a span:hover{
+.header__account li a span:hover,.header__model li a span:hover{
     background-color: rgba(255, 248, 248, 0.6);
 }
 @media (max-width: 1200px) {
     .header__model{
         display: none;
     }
+}
+.menuNav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    width: 300px;
+    z-index: 100;
+    list-style: none;
+    padding: 20px;
+    transition: transform 1s ;
+}
+.menuNav li{
+    padding: 10px;
+}
+.menuNav li a{
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.menuNav li a:hover{
+    background-color: rgba(170, 167, 167, 0.4);
+}
+.closeIcon{
+    cursor: pointer;
+}
+.wrapper{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
 }
