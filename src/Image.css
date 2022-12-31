@@ -22,7 +22,7 @@
 .btn{
     display: flex;
     margin-bottom: 30px;
-    padding-bottom: 15vh;
+    padding-bottom: 10vh;
 }
 .btn button{
     width: 256px;
